@@ -19,6 +19,10 @@ Fases/Versions:
 2. **docker-compose**
   - Agilitzar el procés de posada en marxa dels 2 serveis amb un fitxer `docker compose`
 
+  ```js
+     sudo docker-compose up -d --remove-orphans
+  ```
+
 3. **Client amb Vue.js**
   - Crear client amb Vue.js  --> fer build del codi front a una carpeta  /server/public  com el meu projecte `traversilandia`
 
@@ -31,7 +35,7 @@ Fases/Versions:
 
 
 ## Webgraphy
-
+-[Persistent Databases Using Docker’s Volumes and MongoDB](https://medium.com/better-programming/persistent-databases-using-dockers-volumes-and-mongodb-9ac284c25b39)
 - [Docker 102: Docker Compose (juliol 2018)](https://itnext.io/docker-102-docker-compose-6bec46f18a0e)
 - Idea del projecte basada en  l'[aplicació de Docker Docs - Getting Started](https://docs.docker.com/get-started/02_our_app/) i en Docker Docs
 - [Using MySQL with Node.js and the mysql JavaScript Client](https://www.sitepoint.com/using-node-mysql-javascript-client/)
