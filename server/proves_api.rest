@@ -14,7 +14,7 @@ Content-Type: application/json
 # El body - hi ha d'haver un espai a sota
 
 {
-    "name": "perico de los palotes",
+    "name": "miguel indu",
     "birth_date": "01/01/1962",
     "height": 159, 
     "weight": 55
