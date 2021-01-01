@@ -13,6 +13,8 @@ services:
 
   mongo:
     image: mongo
+    volumes:
+      - ./mongo-volume:/data/db
     environment: 
-       - MONGO_INITDB_ROOT_USERNAME=dbUser
-       - MONGO_INITDB_ROOT_PASSWORD=abcWqqQ9ZWUu0p4dW
+      - MONGO_INITDB_ROOT_USERNAME=dbUser
+      - MONGO_INITDB_ROOT_PASSWORD=abcWqqQ9ZWUu0p4dW
