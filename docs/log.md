@@ -7,7 +7,7 @@
         - Provar amb DOCKER COMPOSE a veure si funciona
 
 
-## NOTES
+## NOTES  Versió 1.1
 
 - Crea la xarxa amb:  `docker network create cyclistapp-net`
 
@@ -17,7 +17,7 @@ https://hub.docker.com/_/mongo
     https://hub.docker.com/_/mongo  
 
 1)
-Crear `scripts/aixecaMongoDB.sh`
+Creat `scripts/aixecaMongoDB.sh`
 
     **NOTA**: poso     `-p 27017:27017` per provar si el codi de server me funciona!
 
@@ -29,13 +29,5 @@ Crear `scripts/aixecaMongoDB.sh`
 
 `docker build -t cyclistapp-server .`
 
+Creat `aixecaServer.sh`
 
-Crear `aixecaServer.sh`
-
-```jsnom
-    docker run -d --network  cyclistapp-net  \
-        --name cyclistapp-server   \
-        -p 8081:8081
-        -v ${PWD}/server:/home/server
-    cyclistapp-server-img
-```
