@@ -27,7 +27,7 @@ Creat `scripts/aixecaMongoDB.sh`
 
     Crear la imatge del server amb:  
 
-`docker build -t cyclistapp-server .`
+`sudo docker build -t cyclistapp-server .`
 
 Creat `aixecaServer.sh`
 
