@@ -53,7 +53,7 @@ var host = enContenidor ? "mongo" : "127.0.0.1";
 // En el contenidor, no accedeix a 127.0.0.1 sino al nom del servei!  (mongo  en el meu cas)
 // https://stackoverflow.com/questions/44508183/docker-compose-mongoose
 
-mongoose.connect(`mongodb://dbUser:abcWqqQ9ZWUu0p4dW@${host}:27017`);
+mongoose.connect(`mongodb://${process.env.MONGO_INITDB_ROOT_USERNAME}:$@{process.env.MONGO_INITDB_ROOT_PASSWORD}${host}:27017`);
 
 //mongoose.connect('mongodb://dbUser:abcWqqQ9ZWUu0p4dW');
 
