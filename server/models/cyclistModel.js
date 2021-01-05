@@ -2,36 +2,36 @@ const mongoose = require("mongoose");
 
 // xtoni Que és Schema?
 const CyclistSchema = new mongoose.Schema({
-  name: {
+  nom: {
     type: String,
     required: true,
     trim: true,
     validate(value) {
-      if (value == "") throw new Error("El camp text no pot estar buid");
+      if (value == "") throw new Error("El camp nom no pot estar buid");
     },
   },
-  birth_date: {
+  naixement: {
     type: Date,
     required: true,
     trim: true,
     validate(value) {
-      if (value == "") throw new Error("El camp text no pot estar buid");
+      if (value == "") throw new Error("El camp naixement no pot estar buid");
     },
   },
-  weight: {
+  pes: {
     type: Number,
     required: true,
     trim: true,
     validate(value) {
-      if (value == "") throw new Error("El camp text no pot estar buid");
+      if (value == "") throw new Error("El camp pes no pot estar buid");
     },
   },
-  height: {
+  altura: {
     type: Number,
     required: true,
     trim: true,
     validate(value) {
-      if (value == "") throw new Error("El camp text no pot estar buid");
+      if (value == "") throw new Error("El camp altura no pot estar buid");
     },
   },
 });

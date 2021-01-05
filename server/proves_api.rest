@@ -14,11 +14,18 @@ Content-Type: application/json
 # El body - hi ha d'haver un espai a sota
 
 {
-    "name": "pepito",
-    "birth_date": "01/01/1962",
-    "height": 159, 
-    "weight": 55
+    "nom": "pepito",
+    "naixement": "01/01/1962",
+    "altura": 159, 
+    "pes": 55
 }
+
+
+### Load from json files
+POST http://localhost:8081/api/cyclists/loadall
+Content-Type: application/json
+# El body - hi ha d'haver un espai a sota
+
 
 ### PENDENT EL DE SOTA 
 ### PENDENT EL DE SOTA 
