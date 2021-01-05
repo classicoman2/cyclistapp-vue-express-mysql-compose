@@ -39,3 +39,4 @@ Fases/Versions:
 - [Docker 102: Docker Compose (juliol 2018)](https://itnext.io/docker-102-docker-compose-6bec46f18a0e)
 - Idea del projecte basada en  l'[aplicació de Docker Docs - Getting Started](https://docs.docker.com/get-started/02_our_app/) i en Docker Docs
 - [Using MySQL with Node.js and the mysql JavaScript Client](https://www.sitepoint.com/using-node-mysql-javascript-client/)
+- [Environment variables in Compose - docker.docs](Environment variables in Compose)

@@ -9,7 +9,7 @@
 
 ## NOTES  Versió 1.1
 
-- Crea la xarxa amb:  `docker network create cyclistapp-net`
+- Crea la xarxa amb:  `sudo docker network create cyclistapp-net`
 
 https://hub.docker.com/_/mongo
     --> pots crear usuari i contrasenya quan "aixeques" el contenidor !!

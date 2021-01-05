@@ -1,20 +1,24 @@
 version: '3.7'
 
 services:
+
+  mongo:
+    image: mongo
+    volumes:
+      - ./mongo-volume:/data/db
+#    environment: 
+#      - MONGO_INITDB_ROOT_USERNAME=dbUser
+#      - MONGO_INITDB_ROOT_PASSWORD=12345
+    env_file:
+      - .env
   app:
     image: cyclistapp-server
     ports:
       - 8081:8081
     volumes:
       - ./:/usr/src/app
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=dbUser
-      - MONGO_INITDB_ROOT_PASSWORD=abcWqqQ9ZWUu0p4dW
-
-  mongo:
-    image: mongo
-    volumes:
-      - ./mongo-volume:/data/db
-    environment: 
-      - MONGO_INITDB_ROOT_USERNAME=dbUser
-      - MONGO_INITDB_ROOT_PASSWORD=abcWqqQ9ZWUu0p4dW
+#    environment:
+#      - MONGO_INITDB_ROOT_USERNAME=dbUser
+#      - MONGO_INITDB_ROOT_PASSWORD=12345
+    env_file:
+      - .env
