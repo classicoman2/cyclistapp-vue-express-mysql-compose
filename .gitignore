@@ -1,3 +1,6 @@
 node_modules
 
 server/.env
+
+server/mongo-volume
+server/loadData/mongo-volume

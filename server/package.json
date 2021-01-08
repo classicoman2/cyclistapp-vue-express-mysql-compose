@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "back de l'aplicacio amb node.js i express.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node server",
+    "dev": "nodemon server",
+    "load": "node loadData/loadData"
   },
   "author": "classicoman2",
   "license": "ISC",

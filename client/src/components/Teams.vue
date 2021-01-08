@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <ul>
       <li v-for="team in teams" v-bind:key="team">
-        {{ team }} <a href="">View Team</a>
+        {{ team.name }} <a href="">View Team</a>
       </li>
     </ul>
   </div>

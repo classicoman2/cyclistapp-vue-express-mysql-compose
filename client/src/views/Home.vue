@@ -37,6 +37,10 @@ export default {
       console.log("foo");
     },
   },
-  mounted() {},
+  mounted() {
+    fetch('http://localhost:8081/api/teams')
+      .then((response) => response.json())
+      .then((data) => (this.teams = data));
+  },
 };
 </script>
